@@ -2,6 +2,8 @@
 
 A minimalist web interface for the Asterisk communications engine. asteroid includes a configuration file editor, a web console / cli and a web softphone (currently using Respoke). A small node.js-based server component acts as a bridge between Asterisk and the client, eliminating the need to log into the underlying Linux system.
 
+![alt asteroid](http://stevensokol.com/mockup/asteroid.png)
+
 ### Major Caveat 1: NOT SECURE
 
 At this point I have not built any security into asteroid, so anyone who can hit the computer on port 443 can drive. This could be an expensive problem if your Asterisk is hooked up to phone lines or SIP trunks. Do not use this on a production system without securing it. 
