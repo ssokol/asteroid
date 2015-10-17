@@ -6,7 +6,7 @@ A minimalist web interface for the Asterisk communications engine. asteroid incl
 
 At this point I have not built any security into asteroid, so anyone who can hit the computer on port 443 can drive. This could be an expensive problem if your Asterisk is hooked up to phone lines or SIP trunks. Do not use this on a production system without securing it. 
 
-Also, as it stands, the server component runs as the root user. This means it can do all kinds of horrible things. So again, don't use this on a production system or any system tied into phone lines.
+Also, as it stands, the server component runs as the root user if you use the included upstart script. This means it can do all kinds of horrible things. So again, don't use this on a production system or any system tied into phone lines.
 
 YOU HAVE BEEN WARNED
 
