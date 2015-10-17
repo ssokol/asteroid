@@ -18,11 +18,14 @@ I've been out of the day-to-day development biz for a while. My code is crappy. 
 
 ### Installation
 
-I've been running it out of:
+You'll need a modern version of node and npm. I've been running it out of /opt/asteroid. Depending on how you have your system set up you'll probably have to either use sudo or be root. You're welcome to put it elsewhere. If you do, you will have to edit the code. (This is very early stuff.) To install it, do this:
   
-    /opt/asteroid
+    cd /opt
+    git clone https://github.com/ssokol/asteroid.git
+    cd asteroid
+    npm install
     
-You're welcome to put it elsewhere. If you do, you will have to edit the code. (This is very early stuff.) You will need to generate a new set of keys for the web server and place them in the sslcert directory:
+You will need to generate a new set of keys for the web server and place them in the sslcert directory:
 
     cd /opt/asteroid/sslcert
     openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
